@@ -33,7 +33,7 @@ public class LambdaStepsIssueTitleTest {
     step("Открываем таб Issues", () -> {
       $("#issues-tab").click();
     });
-    step("Проверяем Action с названием " + ISSUE, () -> {
+    step("Проверяем Issue с названием " + ISSUE, () -> {
       $(withText(ISSUE)).should(Condition.exist);
     });
   }
